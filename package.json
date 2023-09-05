@@ -1,0 +1,21 @@
+{
+  "name": "form-data-management-service",
+  "version": "0.0.1",
+  "description": "Service that provides management of form data.",
+  "dependencies": {
+    "@lblod/mu-auth-sudo": "^0.6.1",
+    "body-parser": "^1.20.0",
+    "cron": "^1.8.2",
+    "rdflib": "^2.2.32",
+    "request-promise": "^4.2.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lblod/form-data-management-service.git"
+  },
+  "author": "redpencil.io",
+  "license": "MIT"
+}
