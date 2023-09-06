@@ -30,19 +30,6 @@ app.get('/', function (req, res) {
   res.send('form-data-management-service is healthy and working! :)');
 });
 
-app.put('/search-queries/:uuid', async function (req, res, next) {
-  const uuid = req.params.uuid;
-  const ttl = req.body;
-  try {
-    await updateSearchQuery(uuid, ttl);
-    return res.status(200).send();
-  } catch (e) {
-    console.log(`Something went wrong while updating triples for search-query with id ${uuid}`);
-    console.log(e);
-    return next(e);
-  }
-});
-
 app.get('/search-query-forms/:uuid', async function (req, res, next) {
   const uuid = req.params.uuid;
   try {
