@@ -6,6 +6,7 @@
     "@lblod/mu-auth-sudo": "^0.6.1",
     "body-parser": "^1.20.0",
     "cron": "^1.8.2",
+    "fs-extra": "^11.1.1",
     "rdflib": "^2.2.32",
     "request-promise": "^4.2.6"
   },
