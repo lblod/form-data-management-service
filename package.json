@@ -4,7 +4,8 @@
   "description": "Service that provides management of form data.",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "request-promise": "^4.2.6"
   },
   "devDependencies": {
-    "eslint": "^8.17.0"
+    "eslint": "^8.17.0",
+    "release-it": "^17.8.2"
   }
 }
