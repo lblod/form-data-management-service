@@ -74,7 +74,7 @@ app.post('/search-query-forms/initiate-meta-construction', async (req, res) => {
   try {
     console.log('/** Initiating meta-data construction at', new Date().toISOString(), ' **/');
     await constructMetaData(); // Construct meta-data
-    res.status(202).end(); // Respond with accepted status
+    res.status(202).send('Meta-data construction has successfully started.').end(); // Respond with accepted status and message
   } catch (e) {
     console.error('Error constructing meta-data:', e);
     res.status(500).send(e.message).end();
