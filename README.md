@@ -49,3 +49,4 @@ This service allows your to define a form (mostly used for filtering tables) in 
 | `ORGANISATION_GRAPH`   | Graph URI for organization data                       | `http://mu.semte.ch/graphs/organizations/141d9d6b-54af-4d17-b313-8d1c30bc3f5b`|
 | `DEFAULT_GRAPH`        | Default graph URI for the service                     | `http://lblod.data.gift/services/form-data-management-service/`               |
 | `ADMINISTRATIVE_UNITS` | URI for administrative units concept scheme           | `http://lblod.data.gift/concept-schemes/7e2b965e-c824-474f-b5d5-b1c115740083` |
+| `RUN_CRON_ON_START`    | Flag to run cron job on service start                 | `true`                                                                        |

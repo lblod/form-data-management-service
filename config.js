@@ -5,6 +5,7 @@ const BATCH_SIZE = parseInt(process.env.BATCH_SIZE) || 1000;
 const ORGANISATION_GRAPH = process.env.ORGANIZATION_GRAPH || 'http://mu.semte.ch/graphs/organizations/141d9d6b-54af-4d17-b313-8d1c30bc3f5b';
 const DEFAULT_GRAPH =  process.env.DEFAULT_GRAPH || 'http://lblod.data.gift/services/form-data-management-service/';
 const ADMINISTRATIVE_UNITS = process.env.ADMINISTRATIVE_UNITS || 'http://lblod.data.gift/concept-schemes/7e2b965e-c824-474f-b5d5-b1c115740083';
+const RUN_CRON_ON_START = process.env.RUN_CRON_ON_START || true;
 
 export {
   DATA_DIRECTORY,
@@ -13,5 +14,6 @@ export {
   BATCH_SIZE,
   ORGANISATION_GRAPH,
   DEFAULT_GRAPH,
-  ADMINISTRATIVE_UNITS
+  ADMINISTRATIVE_UNITS,
+  RUN_CRON_ON_START
 };
