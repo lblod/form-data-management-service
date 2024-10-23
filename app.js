@@ -4,7 +4,7 @@ import { app, errorHandler } from 'mu';
 import { CronJob } from 'cron';
 import { getFileContent } from './lib/file-helpers';
 import { constructMetaData, getMetaData } from './lib/enricher';
-import { META_CRON_PATTERN } from './config';
+import { META_CRON_PATTERN, RUN_CRON_ON_START } from './config';
 import { FORMS } from './constants/form-mappings';
 
 app.use(bodyParser.text({
@@ -45,7 +45,7 @@ app.get('/search-query-forms/:uuid', async (req, res, next) => {
 new CronJob(META_CRON_PATTERN, () => {
   console.log(`Meta-data construction initiated by cron job at ${new Date().toISOString()}`);
   rp.post('http://localhost/search-query-forms/initiate-meta-construction');
-}, null, true, 'Europe/Brussels');
+}, null, true, 'Europe/Brussels', null, RUN_CRON_ON_START);
 
 /**
  * Retrieve meta-data for a specific form
