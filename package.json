@@ -1,6 +1,6 @@
 {
   "name": "form-data-management-service",
-  "version": "0.2.0",
+  "version": "0.4.0",
   "description": "Service that provides management of form data.",
   "main": "app.js",
   "scripts": {
